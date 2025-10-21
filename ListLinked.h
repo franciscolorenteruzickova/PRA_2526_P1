@@ -18,11 +18,11 @@ public:
 
     // Destructor
     ~ListLinked() {
-        Node<T>* current = first;
-        while (current != nullptr) {
-            Node<T>* nextNode = current->next;
-            delete current;
-            current = nextNode;
+        Node<T>* aux;
+        while (first != nullptr) {
+            aux = first->next;
+            delete fisrt;
+            aux = first;
         }
     }
 
